@@ -1,0 +1,102 @@
+@import url(https://fonts.googleapis.com/css?family=Teko:300,regular,500,600,700);
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.head{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: teko, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.head h1{
+    font-size: 5vw;
+    text-shadow: 5px 5px 1px rgb(187, 166, 166);
+}
+.head p{
+    font-size: 1.5vw;
+    text-shadow: 1.5px 1.5px 1px rgb(187, 166, 166);
+}
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align:center;
+    padding: 0 2vw 2vw 2vw;
+    color:white;
+    background-color: black;
+    font-family: teko, sans-serif;
+}
+.card{
+    width: 95%;
+    padding: 1vw;
+    background-color: #111;
+    margin: 1vw 0 0 0;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.card p{
+    width: 100%;
+    padding: 1vw 0.5vw 0 0.5vw;
+    font-size: 1.04vw;
+}
+.card h3{
+    font-size: 1.1vw;
+    border: 5px solid gray;
+    border-left: none;
+    border-top: none;
+    border-right:none;
+}
+.card a{
+    text-decoration: none;
+    color: rgb(146, 150, 153);
+}
+.card:hover{
+    transform: scale(1.25);
+    transition: 1s;
+}
+.cards img{
+    width: 100%;
+}
+
+@media screen and (max-width: 780px){
+    .cards{
+        display: flex;
+        flex-direction: column;
+        text-align:center;
+        padding: 1vw 0 0 4vw;
+        color:white;
+        background-color: black;
+        font-family: teko, sans-serif;
+    }
+    .card{
+        margin: 4vw 0 0 0;
+    }
+    .card p{
+        padding: 1vw 0.5vw 0 0.5vw;
+        font-size: 5vw;
+    }
+    .card h3{
+        font-size: 6vw;
+        border: 5px solid gray;
+        border-left: none;
+        border-top: none;
+        border-right:none;
+    }
+    .card:hover{
+        transform: scale(1);
+        transition: 1s;
+    }
+    .head{
+        border: 1px solid black;
+    }
+    .head h1{
+        font-size: 20vw;
+        text-shadow: 5px 5px 1px rgb(187, 166, 166);
+    }
+    .head p{
+        font-size: 10vw;
+        text-shadow: 1.5px 1.5px 1px rgb(187, 166, 166);
+    }
+}
